@@ -508,7 +508,7 @@ for i in input {
             continue
         }
         newArr.append(j)
-        }
+    }
 }
 
 newArr.sort()
@@ -538,8 +538,7 @@ for i in arr {
             output.append(i.uppercased())
             continue
     }
-        output.append(i)
-
+    output.append(i)
 }
 
 print(output)
@@ -591,3 +590,22 @@ Using for loops, rotate `matrixToRotate` 90 degrees.
 var matrixToRotate = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 ![Matrix Rotation](images/rotated_matrix.jpeg)
+
+``` swift
+
+var matrixToRotate = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+var newMatrix: [[Int]] = []
+
+
+for i in 0..<matrixToRotate.count {
+    var newRow: [Int] = []
+    for element in matrixToRotate {
+        newRow.insert(element[i], at: 0)
+    }
+    newMatrix.append(newRow)
+
+}
+
+print(newMatrix)
+
+```
