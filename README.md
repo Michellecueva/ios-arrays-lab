@@ -19,6 +19,7 @@ print("\(colors[0]), \(colors[2]) and \(colors[4]) are some of my favorite color
 
 Remove "Illinois" and "Kansas" from the array below.
 ``` swift 
+
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
 westernStates.removeSubrange(4...5)
@@ -335,7 +336,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000. 
 
-```
+```swift
 var range = 1..<1000
 var holdNum: [Int] = []
 var sum = 0
